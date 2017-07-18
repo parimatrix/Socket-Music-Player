@@ -27,6 +27,14 @@ io.on('connection',function (socket) {
         console.log("Client Disconnected");
         ctr--;
     });
+    socket.on('song0',function (data) {
+        console.log('changing to ' + data);
+        io.emit('song0',data);
+    });
+    socket.on('song1',function (data) {
+        console.log('changing to ' + data);
+        io.emit('song1',data);
+    });
     socket.on("play",function (data) {
        io.emit('playsong',data);
     });
