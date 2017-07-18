@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13ba529-09c6-4e88-b9d8-6f08f5faa1f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_static/index.html" afterPath="$PROJECT_DIR$/public_static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_static/main.js" afterPath="$PROJECT_DIR$/public_static/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,8 +54,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_static/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="e#0#56#0" expanded="false" />
               </folding>
@@ -250,12 +248,12 @@
       <workItem from="1500228564430" duration="3947000" />
       <workItem from="1500349796638" duration="1674000" />
       <workItem from="1500351551795" duration="907000" />
-      <workItem from="1500360061333" duration="234000" />
+      <workItem from="1500360061333" duration="942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6762000" />
+    <option name="totallyTimeSpent" value="7470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -417,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_static/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding>
             <element signature="e#0#56#0" expanded="false" />
           </folding>

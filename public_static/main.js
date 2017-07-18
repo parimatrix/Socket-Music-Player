@@ -7,7 +7,12 @@ $(function () {
     var audio = document.getElementById('myaudio');
     $('#load').click(function () {
        audio.load();
+       $('#load').html('Loading...');
     });
+    function loaded() {
+        $('#load').html('Loaded.');
+    }
+    audio.addEventListener('canplay',loaded,false);
     socket.on("first", function (data) {
         audio.ontimeupdate = function () {
             socket.emit("where", audio.currentTime);
