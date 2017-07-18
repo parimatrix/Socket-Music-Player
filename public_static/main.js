@@ -17,18 +17,36 @@ $(function () {
     $('#song0').click(function () {
        $('#myaudio').html('<source src="despacito.mp3" class="audio-source">');
        $('#load').click();
+       $('#pause').click();
        socket.emit('song0','desp');
     });
     $('#song1').click(function () {
         $('#myaudio').html('<source src="cute.mp3" class="audio-source">');
         $('#load').click();
+        $('#pause').click();
         socket.emit('song1','cute');
+    });
+    $('#play').click(function () {
+        console.log("play");
+        $('#play').removeClass('show');
+        $('#play').addClass('hide');
+        $('#pause').removeClass('hide');
+        $('#pause').addClass('show');
+        socket.emit("play", audio.currentTime);
+    });
+    $('#pause').click(function () {
+        console.log("pause");
+        $('#pause').removeClass('show');
+        $('#pause').addClass('hide');
+        $('#play').removeClass('hide');
+        $('#play').addClass('show');
+        socket.emit("pause", audio.currentTime);
     });
     socket.on("first", function (data) {
         audio.ontimeupdate = function () {
             socket.emit("where", audio.currentTime);
         };
-        $('#play').click(function () {
+        /*$('#play').click(function () {
             console.log("play");
             $('#play').removeClass('show');
             $('#play').addClass('hide');
@@ -43,7 +61,7 @@ $(function () {
             $('#play').removeClass('hide');
             $('#play').addClass('show');
             socket.emit("pause", audio.currentTime);
-        });
+        });*/
     });
     socket.on('song0',function (data) {
        console.log(data);
