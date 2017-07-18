@@ -24,27 +24,30 @@ io.on('connection',function (socket) {
         socket.emit("first", "first");
     }
     ctr++;
+    socket.on('subscribe',function (room) {
+       socket.join(room);
+    });
     socket.on("disconnect", function () {
         console.log("Client Disconnected");
         ctr--;
     });
     socket.on('song0',function (data) {
         console.log('changing to ' + data);
-        io.emit('song0',data);
+        io.to(data).emit('song0','cute');
     });
     socket.on('song1',function (data) {
         console.log('changing to ' + data);
-        io.emit('song1',data);
+        io.to(data).emit('song1','desp');
     });
     socket.on("play",function (data) {
-       io.emit('playsong',data);
+       io.to(data.room).emit('playsong',data.times);
     });
     socket.on("pause",function (data) {
-        io.emit('pausesong',data);
+        io.to(data.room).emit('pausesong',data.times);
     });
     socket.on("where",function (data) {
         //console.log(data);
-        io.emit("current",data);
+        io.to(data.room).emit("current",data.times);
     });
 });
 http.listen(PORT,function () {
