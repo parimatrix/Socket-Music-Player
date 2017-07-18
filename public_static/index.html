@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sockets</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <style>
+    body {
+        margin-left: 25%;
+        background : #D86103;
+        color : white;
+        text-align: center;
+        font-family: sans-serif;
+        width: 50%;
+        }
+    .fa {
+        color: white;
+        font-size: 150px;
+        cursor: pointer;
+        }
+        .fa-play-circle {
+            
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+<h1>Sockets Music Player</h1>
+    <i id = "play" class="fa fa-play-circle show" aria-hidden="true"></i>
+    <i id = "pause" class="fa fa-pause-circle hide" aria-hidden="true"></i>
+    
+<!--<button id="play">Play Song</button>
+<button id="pause">Pause Song</button>-->
+    <h2>This Player removes a problem we face many a times. Not loud enough speaker. Two clients can play same song that play simultaneously to use up many speakers on different clients.</h2>
+    <h3>The music plays on all tabs/clients open. Only the first client has the controls for the music. <br>Right Now only one song is available on the server.</h3>
+<audio preload="true" id="myaudio">
+    <source src="despacito.mp3" class="audio-source">
+</audio>
+<script src="jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
