@@ -13,6 +13,14 @@ $(function () {
         $('#load').html('Loaded.');
     }
     audio.addEventListener('canplay',loaded,false);
+    $('#song0').click(function () {
+       $('#myaudio').html('<source src="despacito.mp3" class="audio-source">');
+       $('#load').click();
+    });
+    $('#song1').click(function () {
+        $('#myaudio').html('<source src="cute.mp3" class="audio-source">');
+        $('#load').click();
+    });
     socket.on("first", function (data) {
         audio.ontimeupdate = function () {
             socket.emit("where", audio.currentTime);

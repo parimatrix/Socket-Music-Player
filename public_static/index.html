@@ -28,6 +28,13 @@
         .show {
             display: block;
         }
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
     </style>
     
 </head>
@@ -37,7 +44,13 @@
 <button id="load">Load Music</button>
     <i id = "play" class="fa fa-play-circle show" aria-hidden="true"></i>
     <i id = "pause" class="fa fa-pause-circle hide" aria-hidden="true"></i>
-    
+<ul>
+    <li id="song0">Despacito</li>
+    <li id="song1">Cute</li>
+    <li>Despacito</li>
+    <li>Despacito</li>
+    <li>Despacito</li>
+</ul>
 <!--<button id="play">Play Song</button>
 <button id="pause">Pause Song</button>-->
     <h2>This Player removes a problem we face many a times. Not loud enough speaker. Two clients can play same song that play simultaneously to use up many speakers on different clients.</h2>
