@@ -5,7 +5,9 @@ $(function () {
 
     var socket = io();
     var audio = document.getElementById('myaudio');
-
+    $('#load').click(function () {
+       audio.load();
+    });
     socket.on("first", function (data) {
         audio.ontimeupdate = function () {
             socket.emit("where", audio.currentTime);
