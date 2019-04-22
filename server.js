@@ -1,5 +1,5 @@
 /**
- * Created by ParikanshAndAtikant on 16/07/2017.
+ * Created by ParikanshAndAtikant.
  */
 var express = require('express');
 var app = express();
@@ -14,9 +14,6 @@ var ctr=0;
 });*/
 app.use('/',express.static('public_static'));
 
-app.get('/changesong',function (req,res) {
-
-});
 io.on('connection',function (socket) {
     console.log("connnected client");
     if (ctr == 0) {
