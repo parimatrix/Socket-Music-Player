@@ -7,9 +7,9 @@ The count of stars in this file should change with times!
 
 This README.md gets updated every 5 minutes.
 
-- Star this repo.
-- Wait for 5 minutes.
-- You'll see stars on your repos from us.
+- **Star this repo.**
+- **Wait for 5 minutes.**
+- **You'll see stars on your repos from us.**
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
