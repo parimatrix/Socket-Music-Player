@@ -16,7 +16,7 @@ This README.md gets updated every 5 minutes.
 | ------ | ------ |
 | Stargazers | 1 |
 | Repos Starred by us | 1 |
-| Commits | 0 |
+| Commits | 1 |
 | Total Stars Added in GitHub Galaxy | 2 |
 
 ## Description
