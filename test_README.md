@@ -14,14 +14,14 @@ This README.md gets updated every 1 minutes.
 | ------ | ------ |
 | Stargazers | 1 |
 | Repos Starred by us | 1 |
-| Commits | 3 |
+| Commits | 6 |
 | Total Stars Added in GitHub Galaxy | 2 |
 
 ## Latest Stargazers
 
 | Username |
 | ------ |
-| | ahluwaliatikant | |
+| ahluwaliatikant |
 | undefined |
 | undefined |
 
